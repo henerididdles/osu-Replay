@@ -1,3 +1,7 @@
+subl_project_files/*
+*.osr
+.DS_Store
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
