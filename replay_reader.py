@@ -19,7 +19,7 @@ def parseMouseData(mouse_data):
 		click = '{0:04b}'.format(int(z))
 		keys = ['M1', 'M2', 'K1', 'K2']
 		presses = [int(x) for x in click]
-		z = {key: value for (key, value) in zip(keys, presses)}
+		z = {key: bool(value) for (key, value) in zip(keys, presses)}
 
 		mouse_actions.append({
 			'time': w,
